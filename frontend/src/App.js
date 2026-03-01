@@ -5,13 +5,24 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div>
+    <div className="app-wrapper">
+      {/* Top header */}
       <Header />
-      <EventForm />
-      <header className="header">
-      <h1 style={{ textAlign: "center" }}>🤖 Chat with Event Assistant</h1>
-      </header>
-      <ChatBot />
+
+      {/* Main content wrapper */}
+      <div className="main-content">
+        {/* Event Form */}
+        <EventForm />
+
+        {/* Chat Section */}
+        <div className="chat-section">
+          {/* Old style header for ChatBot */}
+          <header className="header chat-header-title">
+            🤖 Chat with Event Assistant
+          </header>
+          <ChatBot />
+        </div>
+      </div>
     </div>
   );
 }
