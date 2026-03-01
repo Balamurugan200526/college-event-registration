@@ -2,13 +2,15 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #2575fc, #2575fc );
+  background: linear-gradient(135deg, #2575fc, #3b82f6);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
 }
-
 
 /* ================= FORM CONTAINER ================= */
 .form-container {
@@ -23,8 +25,9 @@ body {
   border: 2px solid #000;
   overflow: hidden;
   padding-bottom: 20px;
+  box-sizing: border-box;
+  margin: 20px 0;
 }
-
 
 /* ================= REVIEW HEADER ================= */
 .rvhead {
@@ -34,11 +37,10 @@ body {
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   overflow: hidden;
-  position: relative;
   margin-bottom: 25px;
 }
 
-/* ===== MARQUEE WRAPPER (PREMIUM SMOOTH) ===== */
+/* ===== MARQUEE ===== */
 .marquee {
   display: inline-block;
   white-space: nowrap;
@@ -48,27 +50,12 @@ body {
   animation: scrollLeft 12s linear infinite;
 }
 
-/* ===== RIGHT → LEFT CONTINUOUS SCROLL ===== */
 @keyframes scrollLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
-
-/* ================= FORM ================= */
-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* ================= INPUT WRAPPER ================= */
+/* ================= FORM INPUTS ================= */
 .input-icon {
   width: 100%;
   max-width: 700px;
@@ -85,8 +72,6 @@ form {
   color: #007BFF;
 }
 
-
-/* ================= INPUT FIELDS ================= */
 .input-icon input,
 select,
 textarea {
@@ -101,12 +86,8 @@ textarea {
 }
 
 select,
-textarea {
-  padding-left: 20px;
-  margin-bottom: 18px;
-}
+textarea { padding-left: 20px; margin-bottom: 18px; }
 
-/* ===== FOCUS EFFECT ===== */
 .input-icon input:focus,
 select:focus,
 textarea:focus {
@@ -115,11 +96,7 @@ textarea:focus {
   outline: none;
 }
 
-textarea {
-  resize: none;
-  min-height: 120px;
-}
-
+textarea { resize: none; min-height: 120px; }
 
 /* ================= BUTTON ================= */
 .form-container button {
@@ -142,8 +119,7 @@ textarea {
   box-shadow: 0 15px 30px rgba(0, 123, 255, 0.35);
 }
 
-
-/* ================= FORM MESSAGE ================= */
+/* ================= FORM MESSAGES ================= */
 .message {
   text-align: center;
   font-weight: 600;
@@ -155,31 +131,12 @@ textarea {
   width: 90%;
 }
 
-.message.success {
-  background-color: #e6f7ed;
-  color: #27ae60;
-}
-
-.message.error {
-  background-color: #fdecea;
-  color: #c0392b;
-}
-
+.message.success { background-color: #e6f7ed; color: #27ae60; }
+.message.error { background-color: #fdecea; color: #c0392b; }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  .form-container {
-    width: 95%;
-  }
-
-  .marquee {
-    font-size: 18px;
-  }
-
-  .input-icon input,
-  select,
-  textarea,
-  .form-container button {
-    max-width: 90%;
-  }
+  .form-container { width: 95%; }
+  .marquee { font-size: 18px; }
+  .input-icon input, select, textarea, .form-container button { max-width: 90%; }
 }
