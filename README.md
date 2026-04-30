@@ -55,49 +55,52 @@ This project demonstrates a real-world architecture using React (frontend) and N
 college-event-registration/
 │
 ├── backend/
-│   ├── controllers/
-│   │   └── registrationController.js
-│   │
-│   ├── models/
-│   │   └── Registration.js
-│   │
-│   ├── routes/
-│   │   └── registerRoutes.js
-│   │
-│   ├── utils/
-│   │   └── sendEmail.js
-│   │
-│   ├── .env
-│   ├── server.js
-│   ├── package.json
+│ ├── controllers/
+│ │ └── registrationController.js
+│ │
+│ ├── models/
+│ │ └── Registration.js
+│ │
+│ ├── routes/
+│ │ └── registerRoutes.js
+│ │
+│ ├── utils/
+│ │ └── sendEmail.js
+│ │
+│ ├── .env
+│ ├── server.js
+│ └── package.json
 │
 ├── frontend/
-│   ├── public/
-│   │   └── index.html
-│   │
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Header.js
-│   │   │   ├── EventForm.js
-│   │   │   └── ChatBot.js
-│   │   │
-│   │   ├── services/
-│   │   │   └── api.js
-│   │   │
-│   │   ├── styles/
-│   │   │   ├── App.css
-│   │   │   ├── EventForm.css
-│   │   │   ├── Header.css
-│   │   │   └── index.css
-│   │   │
-│   │   ├── App.js
-│   │   ├── index.js
-│   │
-│   ├── .env
-│   ├── package.json
+│ ├── public/
+│ │ └── index.html
+│ │
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── Header.js
+│ │ │ ├── EventForm.js
+│ │ │ └── ChatBot.js
+│ │ │
+│ │ ├── services/
+│ │ │ └── api.js
+│ │ │
+│ │ ├── styles/
+│ │ │ ├── App.css
+│ │ │ ├── EventForm.css
+│ │ │ ├── Header.css
+│ │ │ └── index.css
+│ │ │
+│ │ ├── App.js
+│ │ └── index.js
+│ │
+│ ├── .env
+│ └── package.json
+│
+├── screenshots/
+│ ├── form.png
+│ └── success.png
 │
 └── README.md
-
 ---
 
 ## 📸 Screenshots
