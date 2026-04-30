@@ -200,6 +200,7 @@ Registers a new event participant.
 ## 👨‍💻 Author
 
 **S. Balamurugan**
+
 GitHub: https://github.com/Balamurugan200526
 
 ---
