@@ -113,13 +113,7 @@ college-event-registration/
 
 ### 📝 Event Registration Form
 
-![Registration Form](screenshots/form.png)
-
----
-
-### ✅ Submission Success
-
-![Success Message](screenshots/success.png)
+<img width="1358" height="886" alt="image" src="https://github.com/user-attachments/assets/7f76a9d8-f2ab-44ab-93a0-93b1dc1c4842" />
 
 ---
 
